@@ -72,7 +72,7 @@ const PORT=process.env.PORT
 // call error errorMiddleware 
 app.use(errorMiddleware)
 
-const server=app.listen(4000,async()=>{
+const server=app.listen(process.env.PORT,async()=>{
     console.log(`listening on the port ${process.env.PORT} in ${process.env.NODE_ENV} mode`)
 })
 
