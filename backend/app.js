@@ -69,7 +69,7 @@ app.use('/api/v1',paymentRouter);
 //     res.sendFile(path.resolve(__dirname,'../frontend/build/index.html'))
 //   })
 // }
-const port=process.env.PORT
+const port= process.env.PORT || 4000
 // call error errorMiddleware 
 app.use(errorMiddleware)
 
