@@ -8,6 +8,7 @@ import errorMiddleware from "./middleware/errorMiddleware.js";
 import cookieParser from "cookie-parser";
 import path from 'path';
 import { fileURLToPath } from "url";
+import cors from "cors"
 import orderRoutes from "./routes/order.js"
 //import bodyParser  from "body-parser"
 /*
@@ -33,7 +34,7 @@ process.on("uncaughtException",(err)=>{
 
 const app=express();
 app.use(express.urlencoded({extended:true}))
-const cors = require('cors');
+
 
 /*
 app. use(express. json()) is a middleware function that is used to parse JSON data sent in the request body. 
