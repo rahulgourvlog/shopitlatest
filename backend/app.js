@@ -68,12 +68,12 @@ app.use('/api/v1',paymentRouter);
 //     res.sendFile(path.resolve(__dirname,'../frontend/build/index.html'))
 //   })
 // }
-const PORT=process.env.PORT
+const port=process.env.PORT
 // call error errorMiddleware 
 app.use(errorMiddleware)
 
-const server=app.listen(process.env.PORT,async()=>{
-    console.log(`listening on the port ${process.env.PORT} in ${process.env.NODE_ENV} mode`)
+const server=app.listen(port,async()=>{
+    console.log(`listening on the port ${port} in ${process.env.NODE_ENV} mode`)
 })
 
 // Handle Unhandled Promise Rejections
