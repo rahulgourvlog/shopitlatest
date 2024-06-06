@@ -7,8 +7,8 @@
   "scripts": {
     "start": "node backend/app.js",
     "seeder": "node backend/seeder/seeder.js",
-    "dev": "SET NODE_ENV=DEVELOPMENT& nodemon backend/app.js",
-    "prod": "SET NODE_ENV=PRODUCTION& nodemon backend/app.js"
+    "dev": "export NODE_ENV=DEVELOPMENT && nodemon backend/app.js",
+    "prod": "export NODE_ENV=PRODUCTION && nodemon backend/app.js"
   },
   "author": "rahul Gour",
   "license": "ISC",
