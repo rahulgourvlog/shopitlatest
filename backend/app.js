@@ -47,7 +47,9 @@ app.use(express.json({ limit: '10mb' ,verify:(req,res,buf)=>req.rawBody=buf.toSt
 app.use(cookieParser())
 
 app.use(cors({
-  origin: 'https://shopitapplication.netlify.app' 
+  origin: 'https://shopitecomm.onrender.com' ,
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
 }));
 //app.use(bodyParser.json({ limit: '50mb' }));
 dotenv.config({path:'./backend/config/config.env'})
